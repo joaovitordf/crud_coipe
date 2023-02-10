@@ -14,4 +14,8 @@ class Categoria extends Model
         'nome_categoria',
         'tipo_categoria',
     ];
+
+    public function transacoes() {
+        return $this->hasMany(Transacao::class, 'categoria_id');
+    }
 }

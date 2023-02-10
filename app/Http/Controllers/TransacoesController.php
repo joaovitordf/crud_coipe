@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Categoria;
 use App\Models\Transacao;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
@@ -39,5 +40,11 @@ class TransacoesController extends Controller
         $transacao = Transacao::findOrFail( $id );
         $transacao->delete();
         return Redirect::to('/transacoes');
+    }
+
+    public function filtroCategoria() {
+        return Transacao::withWhereHas ('categorias', function($query){
+            $query->where('nome_categoria', request()->query('categoria'));
+        })->get();
     }
 }

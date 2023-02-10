@@ -72,4 +72,6 @@ Route::post('transacoes/update/{id}', [TransacoesController::class, 'update'])->
 
 Route::delete('transacoes/delete/{id}', [TransacoesController::class, 'delete'])->middleware('auth');
 
+Route::get('transacoes/filtroCategoria', [TransacoesController::class, 'filtroCategoria'])->middleware('auth')->name('filtro.categoria');
+
 //-----------------------------------------------------------

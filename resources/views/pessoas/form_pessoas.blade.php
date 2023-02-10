@@ -61,17 +61,28 @@
                                     <option value="cpf">CPF</option>
                                     <option value="cnpj">CNPJ</option>
                                 </select>
-                                <input type="text" name="documento" id="maskDocumento"  class="form-control" value="{{ $pessoa->documento }}">
+                                <br>
+                                <input type="text" name="documento" id="maskDocumento" class="form-control" value="{{ $pessoa->documento }}">
                             </div>
 
                             <div class="form-group my-2">
                                 <label for="inputPessoa">Tipo:</label>
-                                <input type="text" name="tipo" class="form-control" value="{{ $pessoa->tipo }}">
+                                <br>
+                                <input type="radio" id="fisica" name="tipo" value="Fisica" checked="checked">
+                                <label for="inputPessoa">Fisica</label><br>
+                                <input type="radio" id="juridica" name="tipo" value="Juridica">
+                                <label for="inputPessoa">Juridica</label>
+                                <br>
                             </div>
 
                             <div class="form-group my-2">
-                                <label for="inputPessoa">ativo:</label>
-                                <input type="text" name="ativo" class="form-control" value="{{ $pessoa->ativo }}">
+                                <label for="inputPessoa">Ativo:</label>
+                                <br>
+                                <input type="radio" id="ativoSim" name="ativo" value="Sim" checked="checked">
+                                <label for="inputPessoa">Sim</label><br>
+                                <input type="radio" id="ativoNao" name="ativo" value="Nao">
+                                <label for="inputPessoa">Nao</label>
+                                <br>
                             </div>
 
                             <button type="submit" class="btn btn-primary my-2">Atualizar</button>
@@ -113,17 +124,30 @@
                                     <option value="cpf">CPF</option>
                                     <option value="cnpj">CNPJ</option>
                                 </select>
+                                <br>
                                 <input type="text" name="documento" id="maskDocumento" class="form-control">
                             </div>
 
                             <div class="form-group my-2">
-                                <label for="inputPessoa">Tipo:</label>
-                                <input type="text" name="tipo" class="form-control">
+                                <div class="form-group my-2">
+                                    <label for="inputPessoa">Tipo:</label>
+                                    <br>
+                                    <input type="radio" id="fisica" name="tipo" value="Fisica" checked="checked">
+                                    <label for="inputPessoa">Fisica</label><br>
+                                    <input type="radio" id="juridica" name="tipo" value="Juridica">
+                                    <label for="inputPessoa">Juridica</label>
+                                    <br>
+                                </div>
                             </div>
 
                             <div class="form-group my-2">
                                 <label for="inputPessoa">Ativo:</label>
-                                <input type="text" name="ativo" class="form-control">
+                                <br>
+                                <input type="radio" id="ativoSim" name="ativo" value="Sim" checked="checked">
+                                <label for="inputPessoa">Sim</label><br>
+                                <input type="radio" id="ativoNao" name="ativo" value="Nao">
+                                <label for="inputPessoa">Nao</label>
+                                <br>
                             </div>
 
                             <button type="submit" class="btn btn-primary my-2">Cadastrar</button>

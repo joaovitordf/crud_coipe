@@ -17,10 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string('nome', 128);
             $table->string('email', 256);
-            $table->string('celular', 32);
+            $table->string('celular', 15);
             $table->string('cidade', 64);
             $table->string('estado', 32);
-            $table->string('documento', 32)->unique();
+            $table->string('documento', 14)->unique();
             $table->string('tipo', 128);
             $table->string('ativo', 32);
             $table->timestamps();

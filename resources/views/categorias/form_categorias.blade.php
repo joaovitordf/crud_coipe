@@ -27,7 +27,12 @@
 
                         <div class="form-group my-2">
                             <label for="inputCategoria">Tipo de categoria:</label>
-                            <input type="text" name="tipo_categoria" class="form-control" value="{{ $categoria->tipo_categoria }}">
+                            <br>
+                            <input type="radio" id="credito" name="tipo_categoria" value="Credito" checked="checked">
+                            <label for="inputCategoria">Credito</label><br>
+                            <input type="radio" id="debito" name="tipo_categoria" value="Debito">
+                            <label for="inputCategoria">Debito</label>
+                            <br>
                         </div>
                         <button type="submit" class="btn btn-primary my-2">Atualizar</button>
                     </form>
@@ -43,7 +48,12 @@
 
                         <div class="form-group my-2">
                             <label for="inputCategoria">Tipo de categoria:</label>
-                            <input type="text" name="tipo_categoria" class="form-control">
+                            <br>
+                            <input type="radio" id="credito" name="tipo_categoria" value="Credito" checked="checked">
+                            <label for="inputCategoria">Credito</label><br>
+                            <input type="radio" id="debito" name="tipo_categoria" value="Debito">
+                            <label for="inputCategoria">Debito</label>
+                            <br>
                         </div>
                         <button type="submit" class="btn btn-primary my-2">Cadastrar</button>
                     </form>

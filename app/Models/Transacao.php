@@ -11,11 +11,22 @@ class Transacao extends Model
 {
     use HasApiTokens, HasFactory, Notifiable;
     protected $table = "transacoes";
+    protected $with = ['categorias', 'pessoas'];
     protected $fillable = [
+        'status_transacao',
         'tipo_transacao',
-        'pessoa',
-        'categoria_financeira',
+        'pessoa_id',
+        'categoria_id',
         'saldo_atual',
-        'estado_transacao',
+        'data_vencimentoTitulo',
+        'data_liquidacao',
     ];
+
+    public function categorias() {
+        return $this->belongsTo(Categoria::class, 'categoria_id', 'id');
+    }
+
+    public function pessoas() {
+        return $this->belongsTo(Pessoa::class, 'pessoa_id', 'id');
+    }
 }

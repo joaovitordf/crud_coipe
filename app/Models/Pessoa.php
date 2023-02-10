@@ -20,4 +20,8 @@ class Pessoa extends Model
         'tipo',
         'ativo',
     ];
+
+    public function transacoes() {
+        return $this->hasMany(Transacao::class);
+    }
 }

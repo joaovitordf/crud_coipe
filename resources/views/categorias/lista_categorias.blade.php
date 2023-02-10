@@ -4,7 +4,6 @@
 <div class="container">
     <div class="card">
         <div class="card-header"><a class="btn btn-primary" href="{{ url('categorias/new') }}">Nova Categoria</a></div>
-
         <div class="card-body">
             @if (session('status'))
             <div class="alert alert-success" role="alert">
