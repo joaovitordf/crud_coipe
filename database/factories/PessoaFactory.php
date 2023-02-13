@@ -19,9 +19,9 @@ class PessoaFactory extends Factory
         $faker = \Faker\Factory::create('pt_BR');
         $tipo_aleatorio = rand(0,1);
         if ($tipo_aleatorio == 0) {
-            $tipo = 'Credito';
+            $tipo = 'Fisica';
         } else {
-            $tipo = 'Debito';
+            $tipo = 'Juridica';
         }
 
         $ativo_aleatorio = rand(0,1);
