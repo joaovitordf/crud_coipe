@@ -6,7 +6,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    <a href="{{ url('transacoes') }}">Voltar</a>
+                    <a href="{{ url('transacoes') }}" class="btn btn-primary">Voltar</a>
                 </div>
 
                 <div class="card-body">
@@ -24,9 +24,9 @@
                             <label for="inputTransacao">Status da transacao:</label>
                             <br>
                             <input type="radio" id="aberta" name="status_transacao" value="Aberta" checked="checked">
-                            <label for="inputTransacao">Aberta</label><br>
+                            <label for="inputTransacao"><span class="mx-2">Aberta</span></label><br>
                             <input type="radio" id="liquidada" name="status_transacao" value="Liquidada">
-                            <label for="inputTransacao">Liquidada</label>
+                            <label for="inputTransacao"><span class="mx-2">Liquidada</span></label>
                             <br>
                         </div>
 
@@ -34,19 +34,19 @@
                             <label for="inputTransacao">Tipo da transacao:</label>
                             <br>
                             <input type="radio" id="credito" name="tipo_transacao" value="Credito" checked="checked">
-                            <label for="inputTransacao">Credito</label><br>
+                            <label for="inputTransacao"><span class="mx-2">Credito</span></label><br>
                             <input type="radio" id="debito" name="tipo_transacao" value="Debito">
-                            <label for="inputTransacao">Debito</label>
+                            <label for="inputTransacao"><span class="mx-2">Debito</span></label>
                             <br>
                         </div>
 
                         <div class="form-group my-2">
-                            <label for="inputTransacao">Pessoa:</label>
+                            <label for="inputTransacao">Pessoa(id):</label>
                             <input type="text" name="pessoa_id" class="form-control" value="{{ $transacao->pessoa_id }}">
                         </div>
 
                         <div class="form-group my-2">
-                            <label for="inputTransacao">Categoria financeira:</label>
+                            <label for="inputTransacao">Categoria financeira(id):</label>
                             <input type="text" name="categoria_id" class="form-control" value="{{ $transacao->categoria_id }}">
                         </div>
 
@@ -76,9 +76,9 @@
                             <label for="inputTransacao">Status da transacao:</label>
                             <br>
                             <input type="radio" id="aberta" name="status_transacao" value="Aberta" checked="checked">
-                            <label for="inputTransacao">Aberta</label><br>
+                            <label for="inputTransacao"><span class="mx-2">Aberta</span></label><br>
                             <input type="radio" id="liquidada" name="status_transacao" value="Liquidada">
-                            <label for="inputTransacao">Liquidada</label>
+                            <label for="inputTransacao"><span class="mx-2">Liquidada</span></label>
                             <br>
                         </div>
 
@@ -86,9 +86,9 @@
                             <label for="inputTransacao">Tipo da transacao:</label>
                             <br>
                             <input type="radio" id="credito" name="tipo_transacao" value="Credito" checked="checked">
-                            <label for="inputTransacao">Credito</label><br>
+                            <label for="inputTransacao"><span class="mx-2">Credito</span></label><br>
                             <input type="radio" id="debito" name="tipo_transacao" value="Debito">
-                            <label for="inputTransacao">Debito</label>
+                            <label for="inputTransacao"><span class="mx-2">Debito</span></label>
                             <br>
                         </div>
 
@@ -98,7 +98,7 @@
                         </div>
 
                         <div class="form-group my-2">
-                            <label for="inputTransacao">Categoria financeira:</label>
+                            <label for="inputTransacao">Categoria financeira(id):</label>
                             <input type="text" name="categoria_id" class="form-control">
                         </div>
 

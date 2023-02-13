@@ -16,6 +16,6 @@ class TransacaoSeeder extends Seeder
      */
     public function run()
     {
-        Transacao::factory(10)->create();
+        Transacao::factory(5)->create();
     }
 }

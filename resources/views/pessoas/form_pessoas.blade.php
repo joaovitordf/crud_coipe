@@ -15,7 +15,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
-                        <a href="{{ url('pessoas') }}">Voltar</a>
+                        <a href="{{ url('pessoas') }}" class="btn btn-primary my-2">Voltar</a>
                     </div>
 
                     <div class="card-body">
@@ -57,7 +57,7 @@
                             <div class="form-group my-2">
                                 <label for="inputPessoa">Documento:</label>
                                 <br>
-                                <select id="documento">
+                                <select class="mb-2" id="documento">
                                     <option value="cpf">CPF</option>
                                     <option value="cnpj">CNPJ</option>
                                 </select>
@@ -69,9 +69,9 @@
                                 <label for="inputPessoa">Tipo:</label>
                                 <br>
                                 <input type="radio" id="fisica" name="tipo" value="Fisica" checked="checked">
-                                <label for="inputPessoa">Fisica</label><br>
+                                <label for="inputPessoa"><span class="mx-2">Fisica</span></label><br>
                                 <input type="radio" id="juridica" name="tipo" value="Juridica">
-                                <label for="inputPessoa">Juridica</label>
+                                <label for="inputPessoa"><span class="mx-2">Juridica</span></label>
                                 <br>
                             </div>
 
@@ -79,9 +79,9 @@
                                 <label for="inputPessoa">Ativo:</label>
                                 <br>
                                 <input type="radio" id="ativoSim" name="ativo" value="Sim" checked="checked">
-                                <label for="inputPessoa">Sim</label><br>
+                                <label for="inputPessoa"><span class="mx-2">Sim</span></label><br>
                                 <input type="radio" id="ativoNao" name="ativo" value="Nao">
-                                <label for="inputPessoa">Nao</label>
+                                <label for="inputPessoa"><span class="mx-2">Nao</span></label>
                                 <br>
                             </div>
 
@@ -120,7 +120,7 @@
                             <div class="form-group my-2">
                                 <label for="inputPessoa">Documento:</label>
                                 <br>
-                                <select id="documento">
+                                <select class="mb-2" id="documento">
                                     <option value="cpf">CPF</option>
                                     <option value="cnpj">CNPJ</option>
                                 </select>
@@ -133,9 +133,9 @@
                                     <label for="inputPessoa">Tipo:</label>
                                     <br>
                                     <input type="radio" id="fisica" name="tipo" value="Fisica" checked="checked">
-                                    <label for="inputPessoa">Fisica</label><br>
+                                    <label for="inputPessoa"><span class="mx-2">Fisica</span></label><br>
                                     <input type="radio" id="juridica" name="tipo" value="Juridica">
-                                    <label for="inputPessoa">Juridica</label>
+                                    <label for="inputPessoa"><span class="mx-2">Juridica</span></label>
                                     <br>
                                 </div>
                             </div>
@@ -144,9 +144,9 @@
                                 <label for="inputPessoa">Ativo:</label>
                                 <br>
                                 <input type="radio" id="ativoSim" name="ativo" value="Sim" checked="checked">
-                                <label for="inputPessoa">Sim</label><br>
+                                <label for="inputPessoa"><span class="mx-2">Sim</span></label><br>
                                 <input type="radio" id="ativoNao" name="ativo" value="Nao">
-                                <label for="inputPessoa">Nao</label>
+                                <label for="inputPessoa"><span class="mx-2">Nao</span></label>
                                 <br>
                             </div>
 

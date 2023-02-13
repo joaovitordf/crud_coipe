@@ -33,7 +33,7 @@
     background-color: #3490dc;
     color: #fff;
     border: none;
-    height: 55px;
+    height: auto;
     width: 110px;
     border-radius: 5px;
 }
